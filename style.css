@@ -1,0 +1,69 @@
+body {
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+  
+  h1 {
+    color: darkred;
+  }
+  
+  h2 {
+    color: darkgreen;
+  }
+  
+  ul {
+    list-style-type: square;
+  }
+  
+  .resim img {
+    height: 200px;
+    width: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+  }
+  
+  .kutucuk {
+    height: 150px;
+    width: 200px;
+    background-color: lightcoral;
+    text-align: center;
+    line-height: 150px;
+    border: 2px solid blue;
+    margin: 10px;
+    display: inline-block;
+    border-radius: 10px;
+  }
+
+  body {
+    background-image: url('resimler/arka_plan.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6); /* Arka plan koyuluğu */
+    background-blend-mode: darken;
+  }
+  .karakter {
+    display: inline-block;
+    margin: 20px;
+    text-align: center;
+  }
+  
+  .karakter img {
+    width: 150px;
+    height: 200px;
+    border: 2px solid white;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  
+  .karakter p {
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
