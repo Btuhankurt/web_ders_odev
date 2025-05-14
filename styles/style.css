@@ -1,0 +1,198 @@
+/* GENEL YAPI */
+body {
+  background-image: url('../img/arka_plan.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: rgba(0, 0, 0, 0.6);
+  background-blend-mode: darken;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  line-height: 1.6;
+}
+
+/* BAŞLIKLAR */
+h1 {
+  color: #f5c518;
+  margin-top: 30px;
+}
+h2 {
+  color: #00ffae;
+}
+
+/* PARAGRAFLAR VE LİSTELER */
+p, ul, ol {
+  max-width: 800px;
+  margin: 10px auto;
+  font-size: 17px;
+  color: #f0f0f0;
+}
+ul {
+  list-style-type: square;
+  padding-left: 20px;
+  text-align: left;
+}
+
+/* LİNKLER */
+a {
+  color: #1e90ff;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* BUTON */
+button {
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+}
+button:hover {
+  background-color: #2980b9;
+}
+
+/* GÖRSELLER */
+.resim img {
+  height: 200px;
+  width: auto;
+  margin-top: 20px;
+  border-radius: 10px;
+  border: 2px solid #fff;
+}
+
+/* KUTUCUKLAR */
+.kutucuk {
+  height: 150px;
+  width: 200px;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  text-align: center;
+  line-height: 150px;
+  border: 2px solid #f5c518;
+  margin: 10px;
+  display: inline-block;
+  border-radius: 10px;
+}
+
+/* KARAKTERLER */
+.karakter {
+  display: inline-block;
+  margin: 20px;
+  text-align: center;
+}
+.karakter img {
+  width: 150px;
+  height: 200px;
+  border: 2px solid white;
+  border-radius: 10px;
+  object-fit: cover;
+}
+.karakter p {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+/* TABLO */
+table {
+  width: 90%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid #ccc;
+}
+th, td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+  color: #fff;
+}
+th {
+  background-color: #3498db;
+  color: white;
+}
+
+/* RESPONSIVE TASARIM */
+@media screen and (max-width: 768px) {
+  body {
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  nav a {
+    display: block;
+    margin: 10px 0;
+    font-size: 18px;
+  }
+
+  .karakter {
+    display: block;
+    margin: 0 auto 20px;
+    text-align: center;
+  }
+
+  .karakter img {
+    width: 80%;
+    max-width: 300px;
+    height: auto;
+  }
+
+  table {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  input, textarea, button {
+    width: 100% !important;
+    font-size: 16px;
+  }
+
+  .kutucuk {
+    width: 100%;
+    margin: 10px auto;
+  }
+}
+
+.ana-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin: 30px auto;
+  max-width: 300px;
+}
+
+.ana-menu a {
+  display: block;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  padding: 15px;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: bold;
+  box-shadow: 0 0 8px rgba(0,0,0,0.3);
+  transition: background-color 0.3s;
+}
+
+.ana-menu a:hover {
+  background-color: rgba(255, 255, 255, 0.35);
+}
+
+.container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: rgba(0, 0, 0, 0.5); /* arka plan karartması */
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(255,255,255,0.1);
+}
